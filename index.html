@@ -3,20 +3,137 @@
 
 
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
-<title>
-	Crystals Collector! 
-</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+	<title>
+		Crystals Collector! 
+	</title>
 </head>
 
 <body>
-	
 
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-  </script>
+	<div class ="container">
+		<div class ="page-header">
+			<h1 class="main-header">Crystals Collector!</h1>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-body">
+			<div class ="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							You will be given a random number at the start of the game.
+						</p>
+						<br>
+						<p>
+							There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+						</p>
+						<br>
+						<p>
+							You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. 
+						</p>
+						<br>
+						<p>
+							The value of each crystal is hidden from you until you click on it. 
+						</p>
+						<br>
+						<p>
+							Each time when the game starts, the game will change the values of each crystal.	
+						</p>
+						
+					</div>  
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</div>
+<br>
+
+<div class ="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+			<section class = "random-number">
+				
+				<br>
+				<div id = "displayrandom">
+					<br>
+
+
+				</div>
+			</section>
+		</div>  
+		<br>
+		<div class ="col-md-3">
+			<section class = "win-loss-counter">
+				<span id = "win-counter" ></span>
+				<br>
+				<span id = "loss-counter"></span>
+				<br>
+			</section>
+
+		</div>
+	</div>
+</div>
+
+
+<br>
+
+<div class ="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<section class ="crystals">
+				<img src ='assets/images/blue.jpeg' class='gemimage' id="crystal-one">
+				
+				<img src ='assets/images/yellow.jpeg' class='gemimage' id="crystal-two">
+				
+				
+				<img src ='assets/images/green.png' class='gemimage' id="crystal-three">
+				
+				
+				<img src ='assets/images/red.png' class='gemimage' id="crystal-four">
+				
+				
+			</section>
+		</div>
+	</div>
+</div>
+<br>
+
+<div class = "container-fluid">
+	<div class ="row">
+		<div class="col-md-12">
+			<section class ="total-score-is">
+				Total Score Is : 
+			</section>
+		</div>
+	</div>
+</div>
+<br>
+<div class = "container-fluid">
+	<div class ="row">
+		<div class = "col-md-12">
+
+			<section id ="totalscore">
+
+				<br>
+				<br>
+				<br>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type='text/javascript' src='assets/javascript/game.js'></script>
+
 </body>
 
-</html>>
+</html>
