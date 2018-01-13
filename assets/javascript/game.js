@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   //take those random crystal val and store them with the crystal each time the game refreshes
 
-  //function gamePlay() {
+
     $('#crystal-one').attr('data-crystalvalue', crystalNumber1);
     $('#crystal-two').attr('data-crystalvalue', crystalNumber2);
 
