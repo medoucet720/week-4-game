@@ -12,7 +12,7 @@ $(document).ready(function() {
   function gameInit() {
     randomTarget();
     randomCrystals();
-  //  gamePlay();
+ 
   }
 
   function randomTarget() {
@@ -86,40 +86,3 @@ $(document).ready(function() {
     }) 
   });
   
-
-  // Update win-loss counter
-
-  function updateWins() {
-  	alert('you win');
-    winCounter++;
-    $("#win-counter").html("Wins: " + winCounter);
-    reset();
-  }
-
-  function updateLosses() {
-  	alert('you lose');
-    lossCounter++;
-    $("#loss-counter").html("Losses: " + lossCounter);
-    reset();
-  }
-
-
-  //Random number reset to different random number
-
-  //Total score is reset to zero
-
-  //Values of crystals also change
-
-  function reset() {
-    totalScore = 0;
-    $('#totalscore').html(totalScore);
-    randomCrystals();
-    randomTarget();
-  }
-
-  //Random number reset to different random number
-
-  //Total score is reset to zero
-
-  //Values of crystals also change
-
